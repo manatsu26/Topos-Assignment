@@ -93,15 +93,3 @@ for row in rows[1:151]: # including only the first 150 cities
 # output as a csv file
 df = pd.DataFrame(tableContent[1:], columns=columnLabel)
 df.to_csv('wikiOutput.csv', encoding='utf-8', index=False)
-
-# save to a csv file
-#if os.path.exists('wikiOutput.csv'):
-#    print("ERROR: file wikiOutput.csv already exists. Quitting without saving.")
-#else:
-#    fp = open('wikiOutput.csv', 'w')
-#    text = ''
-#    for row in tableContent:
-#        line = ','.join(row)
-#        text += line + '\n'
-#    fp.write(text)
-#    fp.close()
